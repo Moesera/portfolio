@@ -75,11 +75,10 @@ nav a {
   background: linear-gradient(90deg, red, orange, yellow, green, blue);
   background-clip: text;
   -webkit-background-clip: text;
-}
-
-nav a:hover {
-  color: transparent;
-  transition: 500ms ease;
+  :hover {
+    color: transparent;
+    transition: 500ms ease;
+  }
 }
 
 ul {
@@ -212,12 +211,11 @@ header div:has(img) {
   background: linear-gradient(90deg, red, orange, yellow, green, blue);
   background-clip: text;
   -webkit-background-clip: text;
-}
-
-.socials > a:hover {
-  text-decoration: none;
-  color: transparent;
-  transition: 500ms ease;
+  :hover {
+    text-decoration: none;
+    color: transparent;
+    transition: 500ms ease;
+  }
 }
 
 .socials p {
@@ -461,13 +459,12 @@ header div:has(img) {
       padding: 0.4rem 0.7rem;
       width: 2.5rem;
       transition: 1s ease-in-out;
-    }
-
-    button:hover {
-      background: transparent;
-      border: 0.1rem solid black;
-      color: black;
-      font-weight: 700;
+      :hover {
+        background: transparent;
+        border: 0.1rem solid black;
+        color: black;
+        font-weight: 700;
+      }
     }
   }
 
@@ -518,13 +515,12 @@ header div:has(img) {
     padding: 0.4rem 0.7rem;
     width: 6.5rem;
     transition: 1s ease-in-out;
-  }
-
-  button:hover {
-    background: transparent;
-    border: 0.1rem solid black;
-    color: black;
-    font-weight: 700;
-    width: 7rem;
+    :hover {
+      background: transparent;
+      border: 0.1rem solid black;
+      color: black;
+      font-weight: 700;
+      width: 7rem;
+    }
   }
 }
