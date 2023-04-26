@@ -1,4 +1,4 @@
-import { projects } from "../projects/projects";
+import { projects } from "../projects/projects.mjs";
 
 const modal = document.querySelector(".modal");
 const modalHeader = document.querySelector(".modal-header");
