@@ -5,21 +5,21 @@ export const pageBack = document.querySelector(`[data-attribute="back"]`);
 export const changeButtonText = (pageIndex) => {
   const pageContent = document.querySelector(`[data-index="${pageIndex}"]`);
 
-  // switch(pageContent.id) {
-  //   case "home":
-  //     pageNext.childNodes[1].textContent = "projects";
-  //     pageBack.childNodes[3].textContent = "contact";
-  //     break;
-  //   case "projects":
-  //     pageNext.childNodes[1].textContent = "contact";
-  //     pageBack.childNodes[3].textContent = "home";
-  //     break;
-  //   case "contact":
-  //     pageNext.childNodes[1].textContent = "home";
-  //     pageBack.childNodes[3].textContent = "projects";
-  //     break;
-  //   default:
-  //   pageNext.childNodes[1].textContent = "projects";
-  //   pageBack.childNodes[3].textContent = "contact";
-  // }
+  switch(pageContent.id) {
+    case "home":
+      pageNext.childNodes[1].textContent = "projects";
+      pageBack.childNodes[3].textContent = "contact";
+      break;
+    case "projects":
+      pageNext.childNodes[1].textContent = "contact";
+      pageBack.childNodes[3].textContent = "home";
+      break;
+    case "contact":
+      pageNext.childNodes[1].textContent = "home";
+      pageBack.childNodes[3].textContent = "projects";
+      break;
+    default:
+    pageNext.childNodes[1].textContent = "projects";
+    pageBack.childNodes[3].textContent = "contact";
+  }
 }
