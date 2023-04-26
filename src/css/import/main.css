@@ -1,6 +1,6 @@
 @import url("./variable.css");
-@import url("./slider");
-@import url("./contact");
+@import url("./contact.css");
+@import url("./slider.css");
 
 html {
   min-height: 100%;
