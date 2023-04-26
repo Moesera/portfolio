@@ -1,6 +1,6 @@
-@use "./variable.scss";
-@use "./slider";
-@use "./contact";
+@import url("./variable.css");
+@import url("./slider");
+@import url("./contact");
 
 html {
   min-height: 100%;
@@ -63,10 +63,6 @@ main {
 
 .content {
   max-width: 800px;
-  @media (min-width: 945px) {
-    margin: 0 auto;
-    width: 80%;
-  }
 }
 
 nav a {
@@ -75,10 +71,11 @@ nav a {
   background: linear-gradient(90deg, red, orange, yellow, green, blue);
   background-clip: text;
   -webkit-background-clip: text;
-  :hover {
-    color: transparent;
-    transition: 500ms ease;
-  }
+}
+
+nav a:hover {
+  color: transparent;
+  transition: 500ms ease;
 }
 
 ul {
@@ -112,20 +109,6 @@ h2 {
 
 h3 {
   font-size: 0.8rem;
-}
-
-@media (min-width: 1250px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  h3 {
-    font-size: 1.1rem;
-  }
 }
 
 .hero-txt {
@@ -211,53 +194,41 @@ header div:has(img) {
   background: linear-gradient(90deg, red, orange, yellow, green, blue);
   background-clip: text;
   -webkit-background-clip: text;
-  :hover {
-    text-decoration: none;
-    color: transparent;
-    transition: 500ms ease;
-  }
 }
-
+.socials > a:hover {
+  text-decoration: none;
+  color: transparent;
+  transition: 500ms ease;
+}
 .socials p {
   margin-top: 0;
   color: darkblue;
 }
-
 .socials span {
   color: red;
 }
-
 .my-about {
   margin-bottom: 3rem;
-  p {
-    font-size: 0.9rem;
-    @media (min-width: 1250px) {
-      font-size: 1rem;
-    }
-  }
+}
+.my-about p {
+  font-size: 0.9rem;
 }
 
-.my-skills {
-  .icon-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 0fr);
-    gap: 0.5rem;
-    justify-content: start;
+.my-skills .icon-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
+  gap: 0.5rem;
+  justify-content: start;
+}
 
-    @media (min-width: 550px) {
-      grid-template-columns: repeat(9, 0fr);
-    }
-  }
+.my-skills-icon {
+  width: 2.2rem;
+}
 
-  &-icon {
-    width: 2.2rem;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
+.my-skills-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .fade-left {
@@ -280,65 +251,61 @@ header div:has(img) {
   backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 0.5em;
-
-  @media (min-width: 945px) {
-    width: 50rem;
-  }
-  .page-back {
-    justify-content: flex-start;
-    margin-left: 0.5rem;
-
-    button {
-      justify-content: flex-start;
-    }
-  }
-
-  .page-next {
-    justify-content: flex-end;
-    margin-right: 0.5rem;
-
-    button {
-      justify-content: flex-end;
-    }
-  }
 }
 
+.page-btn-wrap .page-back {
+  justify-content: flex-start;
+  margin-left: 0.5rem;
+}
+.page-btn-wrap .page-back button {
+  justify-content: flex-start;
+}
+.page-btn-wrap .page-next {
+  justify-content: flex-end;
+  margin-right: 0.5rem;
+}
+.page-btn-wrap .page-next button {
+  justify-content: flex-end;
+}
 .page-next,
 .page-back {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   width: 100%;
   display: flex;
-
-  button {
-    cursor: pointer;
-    border-radius: 0.5em;
-    background: black;
-    color: white;
-    border: 0.1rem solid black;
-    text-transform: uppercase;
-    font-size: 0.7rem;
-    padding: 0.4rem 0.7rem;
-    display: flex;
-    align-items: center;
-    width: 6.5rem;
-    transition: 1s ease-in-out;
-    img {
-      width: 1.1rem;
-    }
-
-    p {
-      margin: 0 auto;
-    }
-  }
-
-  button:hover {
-    background: transparent;
-    border: 0.1rem solid black;
-    width: 7rem;
-  }
 }
-// projects
+.page-next button,
+.page-back button {
+  cursor: pointer;
+  border-radius: 0.5em;
+  background: black;
+  color: white;
+  border: 0.1rem solid black;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  padding: 0.4rem 0.7rem;
+  display: flex;
+  align-items: center;
+  width: 6.5rem;
+  transition: 1s ease-in-out;
+}
+.page-next button img,
+.page-back button img {
+  width: 1.1rem;
+}
+.page-next button p,
+.page-back button p {
+  margin: 0 auto;
+}
+
+.page-next button:hover,
+.page-back button:hover {
+  background: transparent;
+  border: 0.1rem solid black;
+  width: 7rem;
+}
+
+/* projects */
 .projects-wrapper {
   display: flex;
   flex-direction: column;
@@ -363,48 +330,49 @@ header div:has(img) {
   display: flex;
   margin: 0;
   width: 95%;
-  img {
-    border-radius: 0.5em;
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-  }
+}
+.project-img-box img {
+  border-radius: 0.5em;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
 }
 
 .context-container {
   display: flex;
   flex-direction: column;
   width: 90%;
+}
 
-  h2 {
-    text-align: left;
-    margin-bottom: 0;
-    margin-top: 0;
-    font-size: 0.9rem;
-  }
+.context-container h2 {
+  text-align: left;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 0.9rem;
+}
 
-  p {
-    flex-grow: 1;
-    font-size: 0.8rem;
-  }
+.context-container p {
+  flex-grow: 1;
+  font-size: 0.8rem;
 }
 
 .tools-wrapper {
   display: flex;
   gap: 0.5rem;
-  figure {
-    width: 2rem;
-    display: flex;
-    margin: 0;
-    img {
-      min-width: 100%;
-      min-height: 100%;
-      object-fit: cover;
-    }
-  }
 }
 
-// Modal
+.tools-wrapper figure {
+  width: 2rem;
+  display: flex;
+  margin: 0;
+}
+
+.tools-wrapper img {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
 .hide-modal {
   display: none;
 }
@@ -426,56 +394,47 @@ header div:has(img) {
   backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 0.5em;
+}
 
-  .modal-header {
-    display: flex;
-    width: 90%;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
+.modal-content .modal-header {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
 
-    @media (min-width: 1250px) {
-      width: 72%;
-    }
+.modal-content .modal-header h2 {
+  font-size: 1.5rem;
+}
 
-    @media (min-width: 1535px) {
-      width: 65rem;
-    }
+.modal-content .modal-header button {
+  cursor: pointer;
+  border-radius: 0.5em;
+  background: black;
+  color: white;
+  border: 0.1rem solid black;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 0.4rem 0.7rem;
+  width: 2.5rem;
+  transition: 1s ease-in-out;
+}
 
-    h2 {
-      @media (min-width: 795px) {
-        font-size: 1.5rem;
-      }
-    }
+.modal-content .modal-header button:hover {
+  background: transparent;
+  border: 0.1rem solid black;
+  color: black;
+  font-weight: 700;
+}
 
-    button {
-      cursor: pointer;
-      border-radius: 0.5em;
-      background: black;
-      color: white;
-      border: 0.1rem solid black;
-      text-transform: uppercase;
-      font-size: 1rem;
-      padding: 0.4rem 0.7rem;
-      width: 2.5rem;
-      transition: 1s ease-in-out;
-      :hover {
-        background: transparent;
-        border: 0.1rem solid black;
-        color: black;
-        font-weight: 700;
-      }
-    }
-  }
-
-  .modal-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    width: 90%;
-    margin: 0 auto;
-  }
+.modal-content .modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .img-thumbnail {
@@ -485,18 +444,11 @@ header div:has(img) {
 .module-img {
   margin: 0 auto;
   width: 100%;
+}
 
-  @media (min-width: 1250px) {
-    width: 80%;
-  }
-
-  @media (min-width: 1535px) {
-    width: 65rem;
-  }
-  img {
-    width: 100%;
-    height: 100%;
-  }
+.module-img img {
+  width: 100%;
+  height: 100%;
 }
 
 .modal-footer {
@@ -504,23 +456,78 @@ header div:has(img) {
   align-items: center;
   justify-content: center;
   margin: 1rem auto;
-  button {
-    cursor: pointer;
-    border-radius: 0.5em;
-    background: black;
-    color: white;
-    border: 0.1rem solid black;
-    text-transform: uppercase;
-    font-size: 0.7rem;
-    padding: 0.4rem 0.7rem;
-    width: 6.5rem;
-    transition: 1s ease-in-out;
-    :hover {
-      background: transparent;
-      border: 0.1rem solid black;
-      color: black;
-      font-weight: 700;
-      width: 7rem;
-    }
+}
+
+.modal-footer button {
+  cursor: pointer;
+  border-radius: 0.5em;
+  background: black;
+  color: white;
+  border: 0.1rem solid black;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  padding: 0.4rem 0.7rem;
+  width: 6.5rem;
+  transition: 1s ease-in-out;
+}
+
+.modal-footer button:hover {
+  background: transparent;
+  border: 0.1rem solid black;
+  color: black;
+  font-weight: 700;
+  width: 7rem;
+}
+
+@media (min-width: 550px) {
+  .my-skills .icon-wrapper {
+    grid-template-columns: repeat(9, 0fr);
+  }
+}
+
+@media (min-width: 945px) {
+  .content {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .page-btn-wrap {
+    width: 50rem;
+  }
+}
+
+@media (min-width: 1250px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .my-about p {
+    font-size: 1rem;
+  }
+
+  .modal-content .modal-header {
+    width: 72%;
+  }
+
+  .module-img {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1535px) {
+  .modal-content .modal-header {
+    width: 65rem;
+  }
+
+  .module-img {
+    width: 65rem;
   }
 }
