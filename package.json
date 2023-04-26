@@ -28,8 +28,6 @@
   },
   "homepage": "https://github.com/Sigvel/portfolio#readme",
   "devDependencies": {
-    "node-sass": "^8.0.0",
-    "sass": "^1.62.0",
     "vite": "^4.0.2"
   }
 }
