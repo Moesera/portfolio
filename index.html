@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+  <meta name="description" content="Welcome to my Sigvel's Portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="/dist/css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/d527618ed6.js" crossorigin="anonymous"></script>
+  <script src="/src/js/index.mjs" type="module" defer></script>
+  <script src="/src/js/components/observers.mjs" defer></script>
+  <title>Homepage | Sigvel's Portfolio</title>
+</head>
+
+<body>
+  <container class="modal hide-modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </container>
+
+  <header>
+    <div class="dev-text">
+      <p>Front-End Developer</p>
+    </div>
+    <div class="header_box">
+      <div class="img-box">
+        <img class="portfolio-img" src="./src/assets/images/profile/profile-img.jpg">
+      </div>
+
+      <div class="nav-profile">
+        <div class="status-text" data-status="looking">
+          <p>Reach me by</p>
+          <div class="socials">
+            <a target="_blank" href="https://www.linkedin.com/in/sigvel/">LinkedIn, </a>
+            <a target="_blank" href="https://discord.com/users/214084196040179715">Discord</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Scroll div start -->
+    <div class="scroll-div">
+      <!-- Content wrap start -->
+      <div class="content-wrap"> <!-- container -->
+
+        <!-- Home page -->
+        <section id="home" class="page-section" data-status="active" data-index="0"> <!-- section  -->
+          <div class="content">
+            <div class="hero-txt">
+              <h1> Welcome to my portfolio </h1>
+            </div>
+            <section class="my-about">
+              <h2>Profile</h2>
+              <div>
+                <h3>Personalia</h3>
+                <p>
+                  I enjoy problem solving and working with code & technology, thus why i am studying as a developer.
+                  I also have background as an production technician.
+                </p>
+                <h3>Occupation</h3>
+                <p>
+                  I am a Front-End Development student,
+                  finishing my degree in the summer of 2023.
+                </p>
+              </div>
+            </section>
+            <aside>
+              <h2>skills</h2>
+              <div id="mySkills" class="my-skills"></div>
+            </aside>
+          </div>
+        </section>
+        <!-- End of home page -->
+
+        <!-- Projects page -->
+        <section id="projects" class="page-section" data-status="hidden" data-index="1">
+          <div class="content">
+            <container class="projects-wrapper">
+
+            </container>
+        </section>
+      </div>
+      </section>
+      <!-- End of projects page -->
+
+      <!-- Contact page -->
+      <section id="contact" class="page-section" data-status="hidden" data-index="2">
+        <div class="content">
+          <h2>Contact</h2>
+          <form>
+            <label></label>
+            <input type="text" placeholder="Full name" minlength="3" required>
+            <label></label>
+            <input type="email" placeholder="Email" required>
+            <label></label>
+            <input type="text" placeholder="Subject" minlength="3" required>
+            <label></label>
+            <textarea placeholder="Message" rows="7" minlength="15"></textarea>
+            <div>
+              <button>Send</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- End of contact page -->
+    </div>
+    <!-- Content wrap end -->
+
+    <!-- Button navigation -->
+    <section class="page-btn-wrap">
+      <div class="page-back">
+        <button data-attribute="back" type="button">
+          <img src="./src/assets/arrows/left-arrow.png" />
+          <p>Contact</p>
+        </button>
+      </div>
+      <div class="page-next">
+        <button data-attribute="next" type="button">
+          <p>project</p>
+          <img src="./src/assets/arrows/right-arrow.png" />
+        </button>
+      </div>
+    </section>
+    <!-- Button navigation end -->
+    </div>
+    <!-- Scroll div end -->
+  </main>
+</body>
+
+</html>

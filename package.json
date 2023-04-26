@@ -1,0 +1,34 @@
+{
+  "name": "portfolio",
+  "version": "1.0.6",
+  "description": "Sigvel's personal portfolio website",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass src/scss:dist/css",
+    "watch": "sass --watch src/scss:dist/css",
+    "dev": "vite",
+    "vite-build": "vite build",
+    "vite-preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sigvel/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "showcase",
+    "projects"
+  ],
+  "author": "Tony",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sigvel/portfolio/issues"
+  },
+  "homepage": "https://github.com/Sigvel/portfolio#readme",
+  "devDependencies": {
+    "sass": "^1.62.0",
+    "vite": "^4.0.2"
+  }
+}

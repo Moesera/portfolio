@@ -1,0 +1,8 @@
+.page-section[data-status="active"] {
+  transition-delay: 300ms;
+  display: flex;
+}
+
+.page-section[data-status="hidden"] {
+  display: none;
+}

@@ -1,0 +1,36 @@
+::-webkit-scrollbar {
+  width: 0.4em;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+::-moz-scrollbar {
+    background: transparent;
+}
+
+::-ms-scrollbar {
+    background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+    border-radius: 0.2em;
+}
+
+::-webkit-scrollbar-track {
+    background-position:center;
+    background-size:auto;
+    border-radius: 100vw;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: linear-gradient(transparent);
+    background: linear-gradient(to top, #fcb045, #fd1d1d, #833ab4);
+    border-radius: 100vw;
+}
+
+@supports (scrollbar-color: red blue) {
+  * {
+    scrollbar-color: rgba(0, 0, 0, 0.2) linear-gradient(to top, #fcb045, #fd1d1d, #833ab4);
+    scrollbar-width: thin;
+  }
+}
