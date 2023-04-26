@@ -33,8 +33,6 @@ const closeModal = () => {
 const createModalContent = (content) => {
   const contentImages = content.images;
 
-  console.log(content);
-
   // header elements
   const modalTitle = document.createElement("h2");
   modalTitle.textContent = content.title;
