@@ -1,12 +1,9 @@
 const skillsWrapper = document.getElementById("mySkills");
 
 export function createSkillNode(props) {
-
-icons(props[0].dev, "Languages");
-icons(props[0].tools, "tools & Libraries");
-
+  icons(props[0].dev, "Languages");
+  icons(props[0].tools, "tools & Libraries");
 }
-
 
 function icons(props, title) {
   const wrapper = document.createElement("div");

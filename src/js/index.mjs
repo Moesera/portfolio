@@ -26,4 +26,4 @@ imgThumbnail.forEach((thumbnail) => {
   thumbnail.addEventListener("click", (e) => {
     openModal(e);
   });
-})
+});

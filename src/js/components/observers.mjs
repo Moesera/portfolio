@@ -1,6 +1,6 @@
 const sliders = document.querySelectorAll(".fade-left");
 
-const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) {
       return;
@@ -9,7 +9,7 @@ const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll
       appearOnScroll.unobserve(entry.target);
     }
   });
-},);
+});
 
 sliders.forEach((slider) => {
   appearOnScroll.observe(slider);
