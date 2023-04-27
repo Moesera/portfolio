@@ -28,7 +28,7 @@ const closeModal = () => {
   modalDelete.forEach((element) => {
     element.remove();
   });
-}
+};
 
 const createModalContent = (content) => {
   const contentImages = content.images;
@@ -61,14 +61,14 @@ const createModalContent = (content) => {
     modalBody.append(imgContainer);
   });
 
-      // modal footer
+  // modal footer
 
-      const closeModalBottom = document.createElement("button");
-      closeModalBottom.type = "button";
-      closeModalBottom.className  = "modal-delete";
-      closeModalBottom.textContent = "Close";
-  
-      closeModalBottom.addEventListener("click", closeModal);
-  
-      modalFooter.append(closeModalBottom);
+  const closeModalBottom = document.createElement("button");
+  closeModalBottom.type = "button";
+  closeModalBottom.className = "modal-delete";
+  closeModalBottom.textContent = "Close";
+
+  closeModalBottom.addEventListener("click", closeModal);
+
+  modalFooter.append(closeModalBottom);
 };
