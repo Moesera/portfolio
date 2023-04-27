@@ -1,4 +1,4 @@
-import { changeButtonText } from "../components/buttonText";
+import { changeButtonText } from "./buttonText.mjs";
 
 /**
  * Card group selector & card description selector
