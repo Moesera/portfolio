@@ -1,4 +1,4 @@
-import { projects } from "./projects/projects";
+import { projects } from "./projects/projectsArray.mjs";
 const projectContainer = document.querySelector(".projects-wrapper");
 
 const toolsHtml = (icons) => {

@@ -4,7 +4,7 @@ import { createSkillNode } from "./components/skills.mjs";
 import { slidePageBack, slidePageNext } from "./components/slider.mjs";
 import { pageNext, pageBack } from "./components/buttonText.mjs";
 import { getProjects } from "./components/projects.mjs";
-// import { openModal } from "./components/modal";
+import { openModal } from "./components/modal";
 
 // Functionality
 
@@ -20,10 +20,10 @@ pageBack.addEventListener("click", () => {
 
 getProjects();
 
-// const imgThumbnail = document.querySelectorAll(".img-thumbnail");
+const imgThumbnail = document.querySelectorAll(".img-thumbnail");
 
-// imgThumbnail.forEach((thumbnail) => {
-//   thumbnail.addEventListener("click", (e) => {
-//     openModal(e);
-//   });
-// });
+imgThumbnail.forEach((thumbnail) => {
+  thumbnail.addEventListener("click", (e) => {
+    openModal(e);
+  });
+});

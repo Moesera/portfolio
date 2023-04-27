@@ -10,7 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  background-image: url("/src/assets/images/background/ranger-park.jpg");
+  background-image: url("./../../assets/images/background/ranger-park.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 98vh;
