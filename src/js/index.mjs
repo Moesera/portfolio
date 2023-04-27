@@ -18,12 +18,12 @@ pageBack.addEventListener("click", () => {
   slidePageBack();
 });
 
-getProjects();
+// getProjects();
 
-const imgThumbnail = document.querySelectorAll(".img-thumbnail");
+// const imgThumbnail = document.querySelectorAll(".img-thumbnail");
 
-imgThumbnail.forEach((thumbnail) => {
-  thumbnail.addEventListener("click", (e) => {
-    openModal(e);
-  });
-});
+// imgThumbnail.forEach((thumbnail) => {
+//   thumbnail.addEventListener("click", (e) => {
+//     openModal(e);
+//   });
+// });
