@@ -37,7 +37,22 @@ export const getProjects = () => {
     const para = document.createElement("p");
     para.textContent = project.description;
 
-    contextWrapper.append(title, para, toolsHtml(project.tools));
+    const buttonWrapper = document.createElement("div");
+    buttonWrapper.className = "project-btn-wrap";
+
+    const demoButton = document.createElement("a");
+    demoButton.href = project.links.hostedDemo;
+    demoButton.target = "_blank";
+    demoButton.textContent = "Demo";
+
+    const repoButton = document.createElement("a");
+    repoButton.href = project.links.repository;
+    repoButton.target = "_blank";
+    repoButton.textContent = "Github"
+
+    buttonWrapper.append(demoButton, repoButton);
+
+    contextWrapper.append(title, para, toolsHtml(project.tools), buttonWrapper);
 
     container.append(imgWrap, contextWrapper);
     projectContainer.append(container);
