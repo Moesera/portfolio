@@ -191,13 +191,9 @@ header div:has(img) {
   color: darkseagreen;
   font-weight: lighter;
   margin-top: 0;
-  background: linear-gradient(90deg, red, orange, yellow, green, blue);
-  background-clip: text;
-  -webkit-background-clip: text;
 }
 .socials > a:hover {
-  text-decoration: none;
-  color: transparent;
+  text-decoration: underlined;
   transition: 500ms ease;
 }
 .socials p {
@@ -212,6 +208,15 @@ header div:has(img) {
 }
 .my-about p {
   font-size: 0.9rem;
+}
+
+a {
+  color: darkseagreen;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .my-skills .icon-wrapper {
