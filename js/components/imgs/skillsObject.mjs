@@ -18,6 +18,10 @@ export const skills = [
       "https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/Postman.svg",
       "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Jest.svg",
       "https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/Wordpress.svg",
+      "https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/Redux.svg",
+      "https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/StyledComponents.svg",
+      "https://user-images.githubusercontent.com/68279555/200387386-276c709f-380b-46cc-81fd-f292985927a8.png",
+      "../../../assets/images/icons/zustand-icon.png",
     ],
   },
 ];
