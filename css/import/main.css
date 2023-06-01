@@ -292,7 +292,7 @@ a:hover {
   display: flex;
   align-items: center;
   width: 6.5rem;
-  transition: 1s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 .page-next button img,
 .page-back button img {
@@ -302,7 +302,6 @@ a:hover {
 .page-back button p {
   margin: 0 auto;
 }
-
 .page-next button:hover,
 .page-back button:hover {
   background: transparent;
@@ -425,20 +424,22 @@ a:hover {
   cursor: pointer;
   border-radius: 0.5em;
   background: black;
+  display: flex;
+  justify-content: center;
   color: white;
   border: 0.1rem solid white;
   text-transform: uppercase;
   font-size: 1rem;
   padding: 0.4rem 0.7rem;
   width: 2.5rem;
-  transition: 1s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .modal-content .modal-header button:hover {
   background: transparent;
   border: 0.1rem solid black;
   color: white;
-  font-weight: 700;
+  padding: 0.6rem 0.7rem;
 }
 
 .modal-content .modal-body {
@@ -481,7 +482,7 @@ a:hover {
   font-size: 0.7rem;
   padding: 0.4rem 0.7rem;
   width: 6.5rem;
-  transition: 1s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .modal-footer button:hover {
