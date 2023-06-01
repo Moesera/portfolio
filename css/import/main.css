@@ -210,6 +210,27 @@ header div:has(img) {
   font-size: 0.9rem;
 }
 
+.context-container a {
+  cursor: pointer;
+  border-radius: 0.5em;
+  background: black;
+  color: white;
+  border: 0.1rem solid white;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  padding: 0.4rem 0.7rem;
+  display: flex;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+}
+
+.context-container a:hover {
+  text-decoration: none;
+  background: transparent;
+  border: 0.1rem solid black;
+  padding: 0.4rem 0.8rem;
+}
+
 a {
   color: darkseagreen;
   text-decoration: none;
