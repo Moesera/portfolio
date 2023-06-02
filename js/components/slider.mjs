@@ -22,14 +22,22 @@ export const slidePageNext = () => {
   /**
    * Active card group becomes after
    */
-  currentPage.dataset.status = "hidden";
+  currentPage.setAttribute("closing", "");
+  currentPage.removeAttribute("opening");
+  setTimeout(() => {
+    currentPage.dataset.status = "hidden";
+}, 700);
 
   /**
    * Update active index
    */
   setTimeout(() => {
-    nextPage.dataset.status = "active";
-    activePageIndex = nextPageIndex;
+    nextPage.removeAttribute("closing");
+    nextPage.setAttribute("opening", "");
+    setTimeout(() => {
+      nextPage.dataset.status = "active";
+      activePageIndex = nextPageIndex;
+    }, 700);
   });
 
   changeButtonText(nextPageIndex);
@@ -44,14 +52,22 @@ export const slidePageBack = () => {
   /**
    * Active group becomes after
    */
-  currentPage.dataset.status = "hidden";
+  currentPage.setAttribute("closing", "");
+  currentPage.removeAttribute("opening");
+  setTimeout(() => {
+    currentPage.dataset.status = "hidden";
+}, 700);
 
   /**
    * Update active index
    */
   setTimeout(() => {
-    nextPage.dataset.status = "active";
-    activePageIndex = nextPageIndex;
+    nextPage.removeAttribute("closing");
+    nextPage.setAttribute("opening", "");
+    setTimeout(() => {
+      nextPage.dataset.status = "active";
+      activePageIndex = nextPageIndex;
+    }, 700);
   });
 
   changeButtonText(nextPageIndex);
