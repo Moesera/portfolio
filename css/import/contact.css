@@ -21,31 +21,40 @@ form {
 }
 
 form input {
+  border-radius: 0.2rem;
   height: 2rem;
   width: 100%;
   font-family: inherit;
-  background: #68263f;
+  background: rgba(255, 255, 255, 0.2);
   color: white;
   border: none;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-form:focus {
+input:focus {
   outline: none;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 form ::placeholder {
-  color: #fff;
+  color: white;
 }
 
 form textarea {
+  padding-top: 0.4rem;
+  border-radius: 0.2rem;
   font-family: inherit;
   resize: vertical;
-  background: #68263f;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
   width: 100%;
   border: none;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+form textarea:focus {
+  outline: none;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 form div {
@@ -65,11 +74,11 @@ form button {
   align-items: center;
   justify-content: center;
   width: 7rem;
-  transition: 1s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 form button:hover {
   background: transparent;
   border: 0.1rem solid black;
-  width: 9rem;
+  width: 7.5rem;
 }
