@@ -269,11 +269,10 @@ a:hover {
 }
 
 .page-btn-wrap {
-  display: flex;
-  width: 86%;
   margin: 0 auto;
+  width: 8rem;
   position: fixed;
-  inset: auto 0rem 1.3rem -0.4rem;
+  inset: auto 1rem 1.5rem;
   background: rgba(0, 0, 0, 0.466);
   box-shadow: 0 1em 7.5em rgb(0 0 0 / 10%);
   backdrop-filter: blur(2px);
@@ -281,29 +280,19 @@ a:hover {
   border-radius: 0.5em;
 }
 
-.page-btn-wrap .page-back {
-  justify-content: flex-start;
-  margin-left: 0.5rem;
-}
-.page-btn-wrap .page-back button {
-  justify-content: flex-start;
-}
 .page-btn-wrap .page-next {
-  justify-content: flex-end;
-  margin-right: 0.5rem;
+  justify-content: center;
 }
 .page-btn-wrap .page-next button {
-  justify-content: flex-end;
+  justify-content: center;
 }
-.page-next,
-.page-back {
+.page-next {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   width: 100%;
   display: flex;
 }
-.page-next button,
-.page-back button {
+.page-next button {
   cursor: pointer;
   border-radius: 0.5em;
   background: black;
@@ -317,16 +306,13 @@ a:hover {
   width: 6.5rem;
   transition: 0.2s ease-in-out;
 }
-.page-next button img,
-.page-back button img {
+.page-next button img {
   width: 1.1rem;
 }
-.page-next button p,
-.page-back button p {
+.page-next button p {
   margin: 0 auto;
 }
-.page-next button:hover,
-.page-back button:hover {
+.page-next button:hover {
   background: transparent;
   border: 0.1rem solid black;
   width: 7rem;
@@ -526,10 +512,6 @@ a:hover {
   .content {
     margin: 0 auto;
     width: 80%;
-  }
-
-  .page-btn-wrap {
-    width: 50rem;
   }
 }
 

@@ -1,8 +1,8 @@
 // Imports
 import { skills } from "./components/imgs/skillsObject.mjs";
 import { createSkillNode } from "./components/skills.mjs";
-import { slidePageBack, slidePageNext } from "./components/slider.mjs";
-import { pageNext, pageBack } from "./components/buttonText.mjs";
+import { slidePageNext } from "./components/slider.mjs";
+import { pageNext } from "./components/buttonText.mjs";
 import { getProjects } from "./components/projects.mjs";
 import { openModal } from "./components/modal.mjs";
 
@@ -14,9 +14,9 @@ pageNext.addEventListener("click", () => {
   slidePageNext();
 });
 
-pageBack.addEventListener("click", () => {
-  slidePageBack();
-});
+// pageBack.addEventListener("click", () => {
+//   slidePageBack();
+// });
 
 getProjects();
 
