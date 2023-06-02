@@ -1,43 +1,5 @@
 export const projects = [
   {
-    title: "The Function",
-    description: "Coding blog project, with a unique navigation around the corners, first year project exam. INFO: this website has currently no content since i have taken down the headless WP and hosting with one.com because of the cost, will be replaced with a new CMS",
-    images: [
-      `../../../assets/images/code-blogg.jpg`,
-      `../../../assets/images/cards/theFunction/the-function-blog-posts.jpg`,
-      `../../../assets/images/cards/theFunction/the-function-contact.jpg`,
-      `../../../assets/images/cards/theFunction/the-function.jpg`,
-    ],
-    tools: [
-      "https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/JavaScript.svg",
-      "https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/HTML.svg",
-      "https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/CSS.svg",
-    ],
-    links: {
-      hostedDemo: "https://thefunction-sigvel.netlify.app/",
-      repository: "https://github.com/Sigvel/Project-exam-1",
-    }
-  },
-  {
-    title: "Community Science Museum",
-    description: "Interactive community science museum website, this is one of my first projects.",
-    images: [
-      `../../../assets/images/interactive-museum.jpg`,
-      `../../../assets/images/cards/communityScience/community-science-museum.jpg`,
-      `../../../assets/images/cards/communityScience/community-science-museum.jpg`,
-      `../../../assets/images/cards/communityScience/community-science-museum.jpg`,
-    ],
-    tools: [
-      "https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/Wordpress.svg",
-      "https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/HTML.svg",
-      "https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/CSS.svg",
-    ],
-    links: {
-      hostedDemo: "https://gallant-bassi-4a5676.netlify.app/",
-      repository: "https://github.com/Sigvel/semester-project",
-    }
-  },
-  {
     title: "Social media app",
     description: "Social media app, to test the website sign up with @noroff.stud.no email",
     images: [
@@ -53,7 +15,7 @@ export const projects = [
       "https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/CSS.svg",
     ],
     links: {
-      hostedDemo: "https://the-social-media.netlify.app/src/pages/login/index.html",
+      hostedDemo: "https://the-social-media.netlify.app/index.html",
       repository: "https://github.com/Sigvel/TheSocial",
     }
   },
