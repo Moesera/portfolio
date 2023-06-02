@@ -1,8 +1,38 @@
+
 .page-section[data-status="active"] {
-  transition-delay: 300ms;
   display: flex;
 }
 
 .page-section[data-status="hidden"] {
   display: none;
+}
+
+.page-section[closing] {
+  animation: fade-out 500ms forwards;
+}
+
+.page-section[opening] {
+  animation: fade-in 500ms forwards;
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
 }
