@@ -244,13 +244,13 @@ a:hover {
 
 .my-skills .icon-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 0fr);
+  grid-template-columns: repeat(auto-fill, minmax(3rem, 2fr));
   gap: 0.5rem;
   justify-content: start;
 }
 
 .my-skills-icon {
-  width: 2.5rem;
+  width: 3rem;
 }
 
 .my-skills-icon img {
@@ -503,9 +503,8 @@ a:hover {
 }
 
 @media (min-width: 550px) {
-  .my-skills .icon-wrapper {
-    grid-template-columns: repeat(9, 0fr);
-  }
+  /* .my-skills .icon-wrapper {
+    /* grid-template-columns: repeat(9, 0fr); */
 }
 
 @media (min-width: 945px) {
