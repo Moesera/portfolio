@@ -3,10 +3,11 @@ export const projects = [
     title: "Social media app",
     description: "Social media app, to test the website sign up with @noroff.stud.no email",
     images: [
-      `../../../assets/images/TheSocial.jpg`,
-      `../../../assets/images/cards/theSocial/the-social-homepage.jpg`,
-      `../../../assets/images/cards/theSocial/the-social-profile.jpg`,
-      `../../../assets/images/cards/theSocial/the-social-view-post.jpg`,
+      `../../../assets/images/cards/theSocial/social-homepage.jpg`,
+      `../../../assets/images/cards/theSocial/social-login.jpg`,
+      `../../../assets/images/cards/theSocial/social-register.jpg`,
+      `../../../assets/images/cards/theSocial/social-profile.jpg`,
+      `../../../assets/images/cards/theSocial/social-details.jpg`,
     ],
     tools: [
       "https://raw.githubusercontent.com/tandpfun/skill-icons/59059d9d1a2c092696dc66e00931cc1181a4ce1f/icons/JavaScript.svg",
