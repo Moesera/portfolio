@@ -249,6 +249,25 @@ a:hover {
   justify-content: start;
 }
 
+.tooltip {
+  /* position: absolute; */
+  background-color: black;
+  color: white;
+  padding: 0.2rem;
+  position: absolute;
+  top: -100%; /* Adjust this value to position the tooltip correctly */
+  left: 50%; /* Adjust this value to horizontally center the tooltip */
+  transform: translateX(-50%);
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 .my-skills-icon {
   width: 3rem;
 }
