@@ -37,7 +37,7 @@ export const projects = [
       "../../../assets/images/icons/zustand-icon.png",
     ],
     links: {
-      hostedDemo: "https://online-shop-merrno.netlify.app/",
+      hostedDemo: "https://sensational-naiad-7cfd07.netlify.app/",
       repository: "https://github.com/Sigvel/Merrno",
     }
   },
