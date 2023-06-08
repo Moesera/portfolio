@@ -553,21 +553,21 @@ a:hover {
     font-size: 1rem;
   }
 
-  .modal-content .modal-header {
-    width: 72%;
-  }
-
-  .module-img {
-    width: 80%;
+  .modal {
+    inset: 11rem 18% 0.5rem;
   }
 }
 
 @media (min-width: 1535px) {
+  .modal {
+    inset: 11rem 25% 0.5rem;
+  }
+
   .modal-content .modal-header {
-    width: 65rem;
+    width: 65%;
   }
 
   .module-img {
-    width: 65rem;
+    width: 73%;
   }
 }
