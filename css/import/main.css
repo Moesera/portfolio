@@ -21,6 +21,7 @@ header {
   font-family: var(--main-font);
   font-weight: bold;
   width: 95%;
+  max-width: 1300px;
   margin: 1rem auto 0rem;
 }
 
@@ -31,6 +32,7 @@ main {
   right: 0;
   bottom: 0.5rem;
   width: 95vw;
+  max-width: 1300px;
   margin: 0 auto;
   font-family: var(--main-font);
   color: white;
@@ -123,6 +125,7 @@ h3 {
   font-size: 1.5em;
   color: white;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .dev-text p {
