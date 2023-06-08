@@ -1,7 +1,7 @@
 const skillsWrapper = document.getElementById("mySkills");
 
 export function createSkillNode(props) {
-  icons(props[0].dev, "Languages");
+  icons(props[0].dev, "Languages & Frameworks");
   icons(props[0].tools, "tools & Libraries");
 }
 
