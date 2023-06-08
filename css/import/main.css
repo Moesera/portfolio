@@ -254,8 +254,11 @@ a:hover {
 
 .tooltip {
   /* position: absolute; */
-  background-color: black;
-  color: white;
+  background: rgba(0, 0, 0, 0.850);
+  box-shadow: 0 1em 7.5em rgb(0 0 0 / 10%);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0.5rem;
   padding: 0.2rem;
   position: absolute;
   top: -100%; /* Adjust this value to position the tooltip correctly */
