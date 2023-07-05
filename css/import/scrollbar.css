@@ -24,13 +24,13 @@
 
 ::-webkit-scrollbar-thumb {
     background-color: linear-gradient(transparent);
-    background: linear-gradient(to top, #fcb045, #fd1d1d, #833ab4);
+    background: darkseagreen;
     border-radius: 100vw;
 }
 
-@supports (scrollbar-color: red blue) {
+@supports (scrollbar-color: darkseagreen) {
   * {
-    scrollbar-color: rgba(0, 0, 0, 0.2) linear-gradient(to top, #fcb045, #fd1d1d, #833ab4);
+    scrollbar-color: darkseagreen;
     scrollbar-width: thin;
   }
 }
