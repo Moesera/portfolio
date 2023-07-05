@@ -10,11 +10,8 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  background-image: url("./../../assets/images/background/ranger-park.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgb(35, 31, 32);
   min-height: 98vh;
-  background-color: darkcyan;
 }
 
 header {
@@ -70,7 +67,6 @@ main {
 nav a {
   text-decoration: none;
   color: white;
-  background: linear-gradient(90deg, red, orange, yellow, green, blue);
   background-clip: text;
   -webkit-background-clip: text;
 }
@@ -177,17 +173,12 @@ h3 {
   font-weight: lighter;
   margin-top: 0;
 }
+
 .socials > a:hover {
   text-decoration: underlined;
   transition: 500ms ease;
 }
-.socials p {
-  margin-top: 0;
-  color: darkblue;
-}
-.socials span {
-  color: red;
-}
+
 .my-about {
   margin-bottom: 3rem;
   background: rgba(255, 255, 255, 0.2);
@@ -196,6 +187,7 @@ h3 {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 0.5rem;
 }
+
 .my-about div {
   font-size: 0.9rem;
   padding: 0rem 0.8rem;
@@ -236,25 +228,15 @@ a:hover {
   text-decoration: underline;
 }
 
-.my-skills {
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 1em 7.5em rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 0.5rem;
-  padding: 0rem 0.8rem 0.8rem;
-}
-
 .my-skills .icon-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(3rem, 2fr));
-  gap: 0.5rem;
-  justify-content: start;
+  grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+  gap: 2rem;
+  justify-content: center;
 }
 
 .tooltip {
-  /* position: absolute; */
-  background: rgba(0, 0, 0, 0.850);
+  background: rgba(0, 0, 0, 0.85);
   box-shadow: 0 1em 7.5em rgb(0 0 0 / 10%);
   backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -274,14 +256,9 @@ a:hover {
   display: block;
 }
 
-.my-skills-icon {
-  width: 3rem;
-}
-
 .my-skills-icon img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .fade-left {
@@ -308,15 +285,18 @@ a:hover {
 .page-btn-wrap .page-next {
   justify-content: center;
 }
+
 .page-btn-wrap .page-next button {
   justify-content: center;
 }
+
 .page-next {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   width: 100%;
   display: flex;
 }
+
 .page-next button {
   cursor: pointer;
   border-radius: 0.5em;
@@ -331,12 +311,15 @@ a:hover {
   width: 6.5rem;
   transition: 0.2s ease-in-out;
 }
+
 .page-next button img {
   width: 1.1rem;
 }
+
 .page-next button p {
   margin: 0 auto;
 }
+
 .page-next button:hover {
   background: transparent;
   border: 0.1rem solid black;
@@ -426,7 +409,7 @@ a:hover {
   font-family: var(--main-font);
   position: absolute;
   z-index: 9999;
-  inset: 11rem 7% 0.5rem;
+  inset: 0.5rem 1% 0.5rem;
   overflow: hidden;
   overflow-y: auto;
 }
@@ -434,7 +417,7 @@ a:hover {
 .modal-content {
   display: flex;
   flex-direction: column;
-  background: rgba(0, 0, 0, 0.466);
+  background: rgb(35, 31, 32);
   box-shadow: 0 1em 7.5em rgb(0 0 0 / 10%);
   backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -450,7 +433,7 @@ a:hover {
 }
 
 .modal-content .modal-header h2 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: white;
 }
 
@@ -528,8 +511,9 @@ a:hover {
 }
 
 @media (min-width: 550px) {
-  /* .my-skills .icon-wrapper {
-    /* grid-template-columns: repeat(9, 0fr); */
+  .modal-content .modal-header h2 {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 945px) {
@@ -556,21 +540,21 @@ a:hover {
     font-size: 1rem;
   }
 
-  .modal {
-    inset: 11rem 18% 0.5rem;
+  .modal-content .modal-header  {
+    width: 70%;
+  }
+  .modal-content .modal-body  {
+    width: 70%;
   }
 }
 
 @media (min-width: 1535px) {
-  .modal {
-    inset: 11rem 25% 0.5rem;
-  }
 
   .modal-content .modal-header {
-    width: 65%;
+    width: 70rem;
   }
 
-  .module-img {
-    width: 73%;
+  .modal-content .modal-body  {
+    width: 70rem;
   }
 }

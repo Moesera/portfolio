@@ -1,5 +1,5 @@
 // Imports
-import { skills } from "./components/imgs/skillsObject.mjs";
+import { skills } from "./components/icons/skillsObject.mjs";
 import { createSkillNode } from "./components/skills.mjs";
 import { slidePageNext } from "./components/slider.mjs";
 import { pageNext } from "./components/buttonText.mjs";
@@ -13,10 +13,6 @@ createSkillNode(skills);
 pageNext.addEventListener("click", () => {
   slidePageNext();
 });
-
-// pageBack.addEventListener("click", () => {
-//   slidePageBack();
-// });
 
 getProjects();
 
