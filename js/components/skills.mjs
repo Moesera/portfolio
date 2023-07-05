@@ -1,27 +1,21 @@
 const skillsWrapper = document.getElementById("mySkills");
 
 export function createSkillNode(props) {
-  icons(props[0].dev, "Languages & Frameworks");
-  icons(props[0].tools, "tools & Libraries");
+  icons(props);
 }
 
-function icons(props, title) {
+function icons(props) {
   const wrapper = document.createElement("div");
-  const header = document.createElement("h3");
 
-  console.log(props);
-  console.log(title);
-
-  header.textContent = title;
   wrapper.className = "icon-wrapper";
-  wrapper.appendChild(header);
 
   props.map((skill) => {
     const imgWrap = document.createElement("div");
     const img = document.createElement("img");
-    imgWrap.className = "my-skills-icon fade-left";
+    imgWrap.className = "my-skills-icon";
     img.src = skill.icon;
     img.alt = skill.title;
+    img.loading="lazy";
 
     const tooltip = document.createElement("p");
     tooltip.textContent = skill.title;
@@ -29,7 +23,7 @@ function icons(props, title) {
 
     imgWrap.append(img, tooltip);
     wrapper.append(imgWrap);
-    skillsWrapper.append(header, wrapper);
+    skillsWrapper.append(wrapper);
 
     imgWrap.addEventListener("mouseenter", () => {
       tooltip.classList.toggle("hidden");
