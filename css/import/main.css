@@ -357,6 +357,7 @@ a:hover {
 .context-container p {
   flex-grow: 1;
   font-size: 0.8rem;
+  line-height: 1rem;
 }
 
 .context-container a {
@@ -532,6 +533,15 @@ a:hover {
 @media (min-width: 945px) {
   .content {
     margin: 0 auto;
+  }
+
+  .context-container p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+
+  .context-container h2 {
+    font-size: 1rem;
   }
 }
 
