@@ -75,4 +75,8 @@ export const skills = [
         title: "Styled Components",
         icon: "../../../assets/icons/StyledComponents-png.png",
       },
+      {
+        title: "Zustand",
+        icon: "../../../assets/icons/zustand-png.png",
+      },
 ];
