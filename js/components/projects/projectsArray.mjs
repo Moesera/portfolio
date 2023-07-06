@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: "Social media app",
-    description: "Social media app, if you want to test the website, you have to sign with a (fake) @noroff.stud.no email. Instructions should be in the readme file of the project",
+    description: "To access and test the social media app website, please follow the instructions provided in the readme file of the project. As part of the testing process, you will need to sign in using a (fake) @noroff.stud.no email address. The readme file will contain detailed instructions on how to proceed with the testing, including any additional steps or requirements. If you encounter any issues or have any questions during the testing process, please refer to the readme file or reach out for further assistance.",
     images: [
       `../../../assets/images/cards/theSocial/social-homepage.jpg`,
       `../../../assets/images/cards/theSocial/social-login.jpg`,
@@ -22,7 +22,7 @@ export const projects = [
   },
   {
     title: "Merrno E-Commerce",
-    description: "E-commerce website, the api used only had products available, the cart system is made with zustand and should work properly. If you want to report a bug please do so by submitting an issue since the contact form is not connected",
+    description: "The e-commerce website utilizes an API that provides product data. Currently, the API only includes information about available products. The cart system, implemented using Zustand, is designed to function properly. If you encounter any bugs or issues while using the website, I kindly request that you submit an issue via GitHub, as the contact form is not currently connected.",
     images: [
       `../../../assets/images/cards/merrno/merrno-homepage.jpg`,
       `../../../assets/images/cards/merrno/merrno-product.jpg`,
@@ -43,7 +43,7 @@ export const projects = [
   },
   {
     title: "Holidaze",
-    description: "Vacation website, allows for users to rent out their venues and book venues, you have to sign up with an (fake) @stud.noroff.no email because of api restrictions, you should find proper instructions in the readme for the project",
+    description: "The vacation website provides a platform for users to both rent out their venues and book venues for their vacations. Please note that, due to API restrictions, users are required to sign up using a @stud.noroff.no email address. Detailed instructions on how to sign up and utilize the website can be found in the project's readme file.",
     images: [
       `../../../assets/images/cards/holidaze/holidaze-homepage.jpg`,
       `../../../assets/images/cards/holidaze/holidaze-login.jpg`,
@@ -64,7 +64,7 @@ export const projects = [
   },
   {
     title: "Chatbot",
-    description: "Chatbot created with the openAi api, simply insert your key and prompt to the bot. the bot uses GPT-3.5-turbo. This is an open-source project, please feel free to clone it and build upon it. You can also contribute by submitting a pull request",
+    description: "The chatbot you are interacting with is created using the OpenAI API, specifically utilizing the GPT-3.5-turbo model. To use the chatbot, simply insert your API key and prompt to initiate a conversation. This project is open-source, and you are welcome to clone it and build upon it for your own purposes. Additionally, contributions are encouraged, and you can contribute by submitting a pull request to enhance the chatbot's capabilities.",
     images: [
       `../../../assets/images/cards/chatbot/chatbot-homepage.jpg`,
     ],
