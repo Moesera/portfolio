@@ -11,6 +11,8 @@ body {
   flex-direction: column;
   margin: 0 auto;
   background-color: rgb(35, 31, 32);
+  background-image: url("../../assets/images/background/crash-astronaut.jpg");
+  background-repeat: no-repeat;
   min-height: 98vh;
 }
 
