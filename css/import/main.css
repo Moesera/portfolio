@@ -61,7 +61,7 @@ main {
 }
 
 .content {
-  max-width: 800px;
+  max-width: 925px;
 }
 
 nav a {
@@ -198,27 +198,6 @@ h3 {
   margin-bottom: 0rem;
 }
 
-.context-container a {
-  cursor: pointer;
-  border-radius: 0.5em;
-  background: black;
-  color: white;
-  border: 0.1rem solid white;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  padding: 0.4rem 0.7rem;
-  display: flex;
-  align-items: center;
-  transition: 0.2s ease-in-out;
-}
-
-.context-container a:hover {
-  text-decoration: none;
-  background: transparent;
-  border: 0.1rem solid black;
-  padding: 0.4rem 0.8rem;
-}
-
 a {
   color: darkseagreen;
   text-decoration: none;
@@ -328,10 +307,10 @@ a:hover {
 
 /* projects */
 .projects-wrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 2fr));
+  justify-content: center;
   gap: 1rem;
-  margin-top: 1rem;
 }
 
 .project-container {
@@ -363,6 +342,7 @@ a:hover {
 .context-container {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   width: 90%;
 }
 
@@ -378,13 +358,35 @@ a:hover {
   font-size: 0.8rem;
 }
 
+.context-container a {
+  cursor: pointer;
+  border-radius: 0.5em;
+  background: black;
+  color: white;
+  border: 0.1rem solid white;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  padding: 0.4rem 0.7rem;
+  display: flex;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+}
+
+.context-container a:hover {
+  text-decoration: none;
+  background: transparent;
+  border: 0.1rem solid black;
+  padding: 0.4rem 0.8rem;
+}
+
 .tools-wrapper {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
 }
 
 .tools-wrapper figure {
-  width: 2rem;
+  width: 3rem;
   display: flex;
   margin: 0;
 }
@@ -407,21 +409,28 @@ a:hover {
 
 .modal {
   font-family: var(--main-font);
-  position: absolute;
+  position: fixed;
   z-index: 9999;
-  inset: 0.5rem 1% 0.5rem;
+  inset: 0;
   overflow: hidden;
   overflow-y: auto;
+}
+
+.modal-dialog {
+  display: flex;
+  min-height: 100%;
 }
 
 .modal-content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   background: rgb(35, 31, 32);
   box-shadow: 0 1em 7.5em rgb(0 0 0 / 10%);
   backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 0.5em;
+  min-width: 100%;
 }
 
 .modal-content .modal-header {
@@ -514,12 +523,14 @@ a:hover {
   .modal-content .modal-header h2 {
     font-size: 1.5rem;
   }
+  .projects-wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 2fr));
+  }
 }
 
 @media (min-width: 945px) {
   .content {
     margin: 0 auto;
-    width: 80%;
   }
 }
 
