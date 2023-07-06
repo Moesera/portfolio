@@ -19,7 +19,7 @@ const toolsHtml = (icons) => {
 
 export const getProjects = () => {
   projects.map((project) => {
-    const container = document.createElement("container");
+    const container = document.createElement("div");
     container.className = "project-container";
 
     const imgWrap = document.createElement("figure");
