@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Social media app",
     description:
-      "To access and test the social media app website, please follow the instructions provided in the readme file of the project. As part of the testing process, you will need to sign in using a (fake) @noroff.stud.no email address. The readme file will contain detailed instructions on how to proceed with the testing, including any additional steps or requirements. If you encounter any issues or have any questions during the testing process, please refer to the readme file or reach out for further assistance.",
+      "To access and test the social media app website, please follow the instructions provided in the readme file of the project. As part of the testing process, you will need to sign in using a (fake) @noroff.stud.no email address. The readme file will contain detailed instructions on how to proceed with the testing, including any additional steps or requirements. If you encounter any issues or have any questions during the testing process, please refer to the readme file or reach out for further assistance. (under maintenance)",
     images: [
       `../../../assets/images/cards/theSocial/social-homepage.jpg`,
       `../../../assets/images/cards/theSocial/social-login.jpg`,
