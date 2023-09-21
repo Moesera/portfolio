@@ -67,7 +67,7 @@ export const projects = [
     images: [`../../../assets/images/cards/chatbot/chatbot-homepage.jpg`],
     tools: ["../../../assets/icons/JavaScript-png.png", "../../../assets/icons/CSS-png.png", "../../../assets/icons/HTML-png.png"],
     links: {
-      hostedDemo: "https://portfolio-panda-dev.netlify.app/",
+      hostedDemo: "https://iridescent-chaja-55bf69.netlify.app/",
       repository: "https://github.com/Sigvel/chatbot",
     },
   },
