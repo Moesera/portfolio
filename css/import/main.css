@@ -52,7 +52,7 @@ main {
   width: 90%;
   display: flex;
   margin: 0 auto;
-  padding-bottom: 5rem;
+  padding-bottom: 6.5rem;
 }
 
 .page-section {
@@ -559,7 +559,6 @@ a:hover {
 }
 
 @media (min-width: 1250px) {
-
   h2 {
     font-size: 1.5rem;
   }
@@ -572,21 +571,20 @@ a:hover {
     font-size: 1rem;
   }
 
-  .modal-content .modal-header  {
+  .modal-content .modal-header {
     width: 70%;
   }
-  .modal-content .modal-body  {
+  .modal-content .modal-body {
     width: 70%;
   }
 }
 
 @media (min-width: 1535px) {
-
   .modal-content .modal-header {
     width: 70rem;
   }
 
-  .modal-content .modal-body  {
+  .modal-content .modal-body {
     width: 70rem;
   }
 }
