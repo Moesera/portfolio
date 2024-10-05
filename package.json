@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/Sigvel/portfolio#readme",
   "devDependencies": {
-    "vite": "^4.5.2"
+    "vite": "^4.5.3"
   }
 }
